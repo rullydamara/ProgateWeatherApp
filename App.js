@@ -18,6 +18,10 @@ const App = () => {
         data.visibility = data.visibility.toFixed(2)
         data.main.temp -= 273.15 // Konversi Kelvin ke Celcius
         data.main.temp = data.main.temp.toFixed(2)
+        data.main.temp_min -= 273.15
+        data.main.temp_min = data.main.temp_min.toFixed(2)
+        data.main.temp_max -= 273.15
+        data.main.temp_max = data.main.temp_max.toFixed(2)
         setWeatherData(data)
         setStatus('success')
       })
